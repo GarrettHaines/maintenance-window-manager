@@ -9,7 +9,7 @@ View a full accounting of each maintenance window, including all associated enti
 Create maintenance windows with ease in a fresh and modernized interface.
 <img width="922" height="497" alt="preview-new-window" src="https://github.com/user-attachments/assets/340689c9-f41d-4e4a-8e7a-851d04aad858" />
 
-Preview which entities will be included in your maintenance window, either in full or by individual filters.
+Attach related entities in a single click. Preview which entities will be included in your maintenance window, either in full or by individual filters.
 <img width="922" height="497" alt="preview-new-window-entities" src="https://github.com/user-attachments/assets/0eeaef04-7532-4e77-8777-88e5e6299f83" />
 
 ## Add Maintenance Window Manager to your Dynatrace environment
