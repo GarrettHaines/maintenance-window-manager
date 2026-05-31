@@ -1,4 +1,11 @@
-const localConfig = require('./app.config.local.json');
+let localConfig;
+try {
+  localConfig = require('./app.config.local.json');
+} catch (err) {
+  throw new Error(
+    'Missing app.config.local.json — copy app.config.local.example.json to app.config.local.json and set your tenant URL. See README step 3.'
+  );
+}
 
 module.exports = {
   environmentUrl: localConfig.environmentUrl,

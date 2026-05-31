@@ -1,4 +1,11 @@
+# Maintenance Window Manager
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org/)
+
 **A clean and comprehensive solution for managing maintenance windows in your Dynatrace monitoring environment.**
+
+## Features
 
 Search and sort a streamlined list of maintenance windows across your environment.
 <img width="922" height="497" alt="preview-main" src="https://github.com/user-attachments/assets/c36b5573-f7a0-4fc0-93d8-8edc605add80" />
@@ -12,7 +19,13 @@ Create maintenance windows with ease in a fresh and modernized interface.
 Attach related entities in a single click. Preview which entities will be included in your maintenance window, either in full or by individual filters.
 <img width="922" height="497" alt="preview-new-window-entities" src="https://github.com/user-attachments/assets/0eeaef04-7532-4e77-8777-88e5e6299f83" />
 
-## Add Maintenance Window Manager to your Dynatrace environment
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) 20 or later
+- npm (bundled with Node.js)
+- A Dynatrace SaaS environment with permission to deploy apps
+
+## Setup
 
 ### 1. Clone the repository
 ```
@@ -26,7 +39,11 @@ npm install
 ```
 
 ### 3. Configure your Dynatrace environment URL
-Create a file named `app.config.local.json` in the project root with your tenant URL:
+Copy the example config and fill in your tenant URL:
+```
+cp app.config.local.example.json app.config.local.json
+```
+Then edit `app.config.local.json`:
 ```json
 {
   "environmentUrl": "https://YOUR-ENVIRONMENT.apps.dynatrace.com/"
@@ -39,3 +56,7 @@ This file is gitignored, so your tenant URL stays out of version control. `app.c
 npm run deploy
 ```
 An authentication window will open in your browser to sign in to your Dynatrace environment. Once authenticated, the application is deployed directly to your tenant.
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
