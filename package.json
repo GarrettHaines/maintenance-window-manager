@@ -2,6 +2,8 @@
   "name": "maintenance-window-manager",
   "version": "1.0.0",
   "description": "View and create maintenance windows.",
+  "author": "Garrett Haines",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "dt-app build --prod",
@@ -18,8 +20,6 @@
   "engines": {
     "node": ">=16.13.0"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@dynatrace-sdk/app-environment": "^1.1.4",
     "@dynatrace-sdk/client-classic-environment-v2": "^5.2.3",
