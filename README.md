@@ -16,8 +16,8 @@ Attach related entities in a single click. Preview which entities will be includ
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/GarrettHaines/MaintenanceWindowManager.git
-cd MaintenanceWindowManager
+git clone https://github.com/GarrettHaines/maintenance-window-manager.git
+cd maintenance-window-manager
 ```
 
 ### 2. Install dependencies
