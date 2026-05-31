@@ -13,8 +13,29 @@ Preview which entities will be included in your maintenance window, either in fu
 <img width="922" height="497" alt="preview-new-window-entities" src="https://github.com/user-attachments/assets/0eeaef04-7532-4e77-8777-88e5e6299f83" />
 
 ## Add Maintenance Window Manager to your Dynatrace environment
-- Add your Dynatrace tenant URL to the `app.config.json` file.
-- From your project directory, run `npm run deploy` or `yarn deploy` to initiate the installation of Maintenance Window Manager in your Dynatrace environment.
-- An authentication window will open in your browser, prompting you to securely sign in to your Dynatrace environment.
-- Once authenticated, the application will be deployed directly to your environment.
 
+### 1. Clone the repository
+```
+git clone https://github.com/GarrettHaines/MaintenanceWindowManager.git
+cd MaintenanceWindowManager
+```
+
+### 2. Install dependencies
+```
+npm install
+```
+
+### 3. Configure your Dynatrace environment URL
+Create a file named `app.config.local.json` in the project root with your tenant URL:
+```json
+{
+  "environmentUrl": "https://YOUR-ENVIRONMENT.apps.dynatrace.com/"
+}
+```
+This file is gitignored, so your tenant URL stays out of version control. `app.config.js` reads from it at build time.
+
+### 4. Deploy
+```
+npm run deploy
+```
+An authentication window will open in your browser to sign in to your Dynatrace environment. Once authenticated, the application is deployed directly to your tenant.
